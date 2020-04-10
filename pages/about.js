@@ -8,7 +8,7 @@ export default function About(props) {
       <div style={{ fontSize: "15pt" }}>
         <p>
           Thanks for visiting. This Project is still in development mode. <br />
-          I I would love to know more about your opinion.
+          I would love to know more about your opinion.
         </p>
         <p>Please feel free to send me your feedback. </p>
         <hr />
