@@ -1,6 +1,7 @@
 import getMainData from "../Utils/getMainData";
 import Stats from "../Components/stats";
 import CountryData from "../Components/CountryData";
+import ChartData from "./ChartData";
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 
@@ -52,6 +53,13 @@ export default function CountrySelector() {
           <CountryData
             url={"https://corona.lmao.ninja/countries/" + selectedCountry}
           ></CountryData>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {/* <ChartData
+            url={"https://corona.lmao.ninja/v2/historical/" + selectedCountry}
+          ></ChartData> */}
         </Col>
       </Row>
     </>
