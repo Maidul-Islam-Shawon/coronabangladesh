@@ -34,7 +34,7 @@ export default function CountryData({ url }) {
               <h3>Coronavirus Cases </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.cases}</h4>
+              <h4 className="card-title">{mainData.cases.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -46,7 +46,9 @@ export default function CountryData({ url }) {
               <h3>Recovered </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.recovered}</h4>
+              <h4 className="card-title">
+                {mainData.recovered.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -58,7 +60,7 @@ export default function CountryData({ url }) {
               <h3>Deaths </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.deaths}</h4>
+              <h4 className="card-title">{mainData.deaths.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -72,7 +74,9 @@ export default function CountryData({ url }) {
               <h3>New Cases </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.todayCases}</h4>
+              <h4 className="card-title">
+                {mainData.todayCases.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -84,7 +88,9 @@ export default function CountryData({ url }) {
               <h3>New Deaths </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.todayDeaths}</h4>
+              <h4 className="card-title">
+                {mainData.todayDeaths.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -96,7 +102,7 @@ export default function CountryData({ url }) {
               <h3>Active Cases </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.active}</h4>
+              <h4 className="card-title">{mainData.active.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -110,7 +116,9 @@ export default function CountryData({ url }) {
               <h3>Critical Cases </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.critical}</h4>
+              <h4 className="card-title">
+                {mainData.critical.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -122,7 +130,7 @@ export default function CountryData({ url }) {
               <h3>Total Tests </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.tests}</h4>
+              <h4 className="card-title">{mainData.tests.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -134,7 +142,9 @@ export default function CountryData({ url }) {
               <h3>Deaths / 1 Million </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.deathsPerOneMillion}</h4>
+              <h4 className="card-title">
+                {mainData.deathsPerOneMillion.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>

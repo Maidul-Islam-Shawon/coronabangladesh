@@ -10,6 +10,9 @@ export default function Stats({ url }) {
 
   let UpdateDate = new Date(mainData.updated).toTimeString();
 
+  let people = mainData.cases.toLocaleString();
+  console.log(people);
+
   return (
     <>
       <Row style={{ paddingTop: "15px", textAlign: "center" }}>
@@ -19,7 +22,7 @@ export default function Stats({ url }) {
               <h3>Coronavirus Cases </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.cases}</h4>
+              <h4 className="card-title">{mainData.cases.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -31,7 +34,9 @@ export default function Stats({ url }) {
               <h3>Recovered </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.recovered}</h4>
+              <h4 className="card-title">
+                {mainData.recovered.toLocaleString()}
+              </h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -43,7 +48,7 @@ export default function Stats({ url }) {
               <h3>Deaths </h3>
             </div>
             <div className="card-body">
-              <h4 className="card-title">{mainData.deaths}</h4>
+              <h4 className="card-title">{mainData.deaths.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
