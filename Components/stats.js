@@ -1,17 +1,18 @@
 import getMainData from "../Utils/getMainData";
+import ChartDataAll from "./ChartDataAll";
 import { Row, Col } from "react-bootstrap";
 
 export default function Stats({ url }) {
   const { coronadata: mainData, error } = getMainData(url);
 
-  console.log(mainData);
+  //console.log(mainData);
   if (!mainData) return <p>Loading...</p>;
   if (error) return <p>Error...{error}</p>;
 
   let UpdateDate = new Date(mainData.updated).toTimeString();
 
   let people = mainData.cases.toLocaleString();
-  console.log(people);
+  // console.log(people);
 
   return (
     <>
@@ -52,6 +53,13 @@ export default function Stats({ url }) {
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <ChartDataAll
+            url={"https://corona.lmao.ninja/v2/historical/all?lastdays=30"}
+          ></ChartDataAll>
         </Col>
       </Row>
     </>

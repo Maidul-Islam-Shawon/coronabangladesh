@@ -47,19 +47,18 @@ export default function CountrySelector() {
           </div>
         </Col>
       </Row>
-
       <Row>
+        <Col>
+          <ChartData
+            url={"https://corona.lmao.ninja/v2/historical/" + selectedCountry}
+          ></ChartData>
+        </Col>
+      </Row>
+      <Row style={{ paddingTop: "20px" }}>
         <Col>
           <CountryData
             url={"https://corona.lmao.ninja/countries/" + selectedCountry}
           ></CountryData>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          {/* <ChartData
-            url={"https://corona.lmao.ninja/v2/historical/" + selectedCountry}
-          ></ChartData> */}
         </Col>
       </Row>
     </>

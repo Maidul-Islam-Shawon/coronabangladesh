@@ -1,8 +1,7 @@
 import getMainData from "../Utils/getMainData";
 import ChartDataList from "./ChartDataList";
-import { useState } from "react";
 
-export default function ChartData({ url }) {
+export default function ChartDataAll({ url }) {
   const { coronadata: mainData, error } = getMainData(url);
 
   if (!mainData) return <p>Loading...</p>;
@@ -11,9 +10,9 @@ export default function ChartData({ url }) {
   //const data = [{ date1: 3455, date2: 4000, date3: 2400, date4: 2400 }];
 
   //.....get Cases History Data....//
-  let HistoryCases = [mainData.timeline.cases];
-  let HistoryDeaths = [mainData.timeline.deaths];
-  let HistoryRecovered = [mainData.timeline.recovered];
+  let HistoryCases = [mainData.cases];
+  let HistoryDeaths = [mainData.deaths];
+  let HistoryRecovered = [mainData.recovered];
 
   let date = Object.keys(HistoryCases[0]);
   let people = Object.values(HistoryCases[0]);
@@ -44,7 +43,7 @@ export default function ChartData({ url }) {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h3 style={{ color: "lightseagreen" }}>History</h3>
+      <h3 style={{ color: "lightseagreen" }}>History (All)</h3>
       <ChartDataList Chart={Chart} />
     </div>
   );
