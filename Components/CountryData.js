@@ -29,49 +29,9 @@ export default function CountryData({ url }) {
       </div>
       <Row style={{ paddingTop: "10px", textAlign: "center" }}>
         <Col md={4}>
-          <div className="card text-white bg-primary mb-3">
+          <div className="card text-white bg-primary  mb-3">
             <div className="card-header">
-              <h3>Coronavirus Cases </h3>
-            </div>
-            <div className="card-body">
-              <h4 className="card-title">{mainData.cases.toLocaleString()}</h4>
-            </div>
-            <span className="card-footer">Last Update: {UpdateDate}</span>
-          </div>
-        </Col>
-
-        <Col md={4}>
-          <div className="card text-white bg-success mb-3">
-            <div className="card-header">
-              <h3>Recovered </h3>
-            </div>
-            <div className="card-body">
-              <h4 className="card-title">
-                {mainData.recovered.toLocaleString()}
-              </h4>
-            </div>
-            <span className="card-footer">Last Update: {UpdateDate}</span>
-          </div>
-        </Col>
-
-        <Col md={4}>
-          <div className="card text-white bg-danger mb-3">
-            <div className="card-header">
-              <h3>Deaths </h3>
-            </div>
-            <div className="card-body">
-              <h4 className="card-title">{mainData.deaths.toLocaleString()}</h4>
-            </div>
-            <span className="card-footer">Last Update: {UpdateDate}</span>
-          </div>
-        </Col>
-      </Row>
-
-      <Row style={{ paddingTop: "10px", textAlign: "center" }}>
-        <Col md={4}>
-          <div className="card text-white bg-secondary  mb-3">
-            <div className="card-header">
-              <h3>New Cases </h3>
+              <h3>New Cases (Today) </h3>
             </div>
             <div className="card-body">
               <h4 className="card-title">
@@ -83,9 +43,9 @@ export default function CountryData({ url }) {
         </Col>
 
         <Col md={4}>
-          <div className="card text-white bg-warning  mb-3">
+          <div className="card text-white bg-danger  mb-3">
             <div className="card-header">
-              <h3>New Deaths </h3>
+              <h3>New Deaths (Today) </h3>
             </div>
             <div className="card-body">
               <h4 className="card-title">
@@ -103,6 +63,46 @@ export default function CountryData({ url }) {
             </div>
             <div className="card-body">
               <h4 className="card-title">{mainData.active.toLocaleString()}</h4>
+            </div>
+            <span className="card-footer">Last Update: {UpdateDate}</span>
+          </div>
+        </Col>
+      </Row>
+
+      <Row style={{ paddingTop: "10px", textAlign: "center" }}>
+        <Col md={4}>
+          <div className="card text-white bg-success mb-3">
+            <div className="card-header">
+              <h3>Total Recovered </h3>
+            </div>
+            <div className="card-body">
+              <h4 className="card-title">
+                {mainData.recovered.toLocaleString()}
+              </h4>
+            </div>
+            <span className="card-footer">Last Update: {UpdateDate}</span>
+          </div>
+        </Col>
+
+        <Col md={4}>
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-header">
+              <h3>Total Cases </h3>
+            </div>
+            <div className="card-body">
+              <h4 className="card-title">{mainData.cases.toLocaleString()}</h4>
+            </div>
+            <span className="card-footer">Last Update: {UpdateDate}</span>
+          </div>
+        </Col>
+
+        <Col md={4}>
+          <div className="card text-white bg-danger mb-3">
+            <div className="card-header">
+              <h3>Total Deaths </h3>
+            </div>
+            <div className="card-body">
+              <h4 className="card-title">{mainData.deaths.toLocaleString()}</h4>
             </div>
             <span className="card-footer">Last Update: {UpdateDate}</span>
           </div>
@@ -137,7 +137,7 @@ export default function CountryData({ url }) {
         </Col>
 
         <Col md={4}>
-          <div className="card text-white bg-danger mb-3">
+          <div className="card text-white bg-info mb-3">
             <div className="card-header">
               <h3>Deaths / 1 Million </h3>
             </div>

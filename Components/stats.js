@@ -20,7 +20,7 @@ export default function Stats({ url }) {
         <Col md={4}>
           <div className="card text-white bg-primary mb-3">
             <div className="card-header">
-              <h3>Coronavirus Cases </h3>
+              <h3>Total Cases </h3>
             </div>
             <div className="card-body">
               <h4 className="card-title">{mainData.cases.toLocaleString()}</h4>
@@ -32,7 +32,7 @@ export default function Stats({ url }) {
         <Col md={4}>
           <div className="card text-white bg-success mb-3">
             <div className="card-header">
-              <h3>Recovered </h3>
+              <h3>Total Recovered </h3>
             </div>
             <div className="card-body">
               <h4 className="card-title">
@@ -46,7 +46,7 @@ export default function Stats({ url }) {
         <Col md={4}>
           <div className="card text-white bg-danger mb-3">
             <div className="card-header">
-              <h3>Deaths </h3>
+              <h3>Total Deaths </h3>
             </div>
             <div className="card-body">
               <h4 className="card-title">{mainData.deaths.toLocaleString()}</h4>
