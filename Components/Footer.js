@@ -6,11 +6,21 @@ export const Footer = () => (
   <>
     <Container fluid className="footer-container">
       <Row>
-        <Col md={6}>
+        <Col md={4}>
           <h5>Corona Bangladesh</h5>
           <p>Coronavirus disease (COVID-19) outbreak situation</p>
         </Col>
-        <Col md={6}>
+
+        <Col md={4} style={{ padding: "15px" }}>
+          <img
+            src="https://counter11.stat.ovh/private/freecounterstat.php?c=2ljetht3sr1bt45d1sd9l61166rj1yky"
+            border="0"
+            title="Visitor counter"
+            alt="website counter"
+          ></img>
+        </Col>
+
+        <Col md={4}>
           <h5>Links</h5>
           <nav>
             <ul className="footerUl">
