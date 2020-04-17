@@ -71,13 +71,13 @@ export default function Advice() {
             viruses and other infections.
           </p>
           <hr />
-          <div class="alert alert-dismissible alert-info">
-            <button type="button" class="close" data-dismiss="alert">
+          <div className="alert alert-dismissible alert-info">
+            <button type="button" className="close" data-dismiss="alert">
               &times;
             </button>
             <strong>References: World Health Organization: WHO </strong>
             <br />
-            <a class="alert-link">
+            <a className="alert-link">
               https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
             </a>
           </div>

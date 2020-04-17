@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Image } from "react-bootstrap";
+//import img from "../assets/CB-Icon.png";
 
 export default function NavBar() {
   return (

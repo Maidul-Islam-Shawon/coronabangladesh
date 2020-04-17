@@ -12,7 +12,7 @@ export default function Index() {
         Covid19 Cases Worldwide
       </h2>
 
-      <Stats url="https://corona.lmao.ninja/all"></Stats>
+      <Stats url="https://corona.lmao.ninja/v2/all"></Stats>
       <hr />
       <CountrySelector />
     </Layout>

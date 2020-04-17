@@ -6,12 +6,13 @@ export default function Stats({ url }) {
   const { coronadata: mainData, error } = getMainData(url);
 
   //console.log(mainData);
+
   if (!mainData) return <p>Loading...</p>;
   if (error) return <p>Error...{error}</p>;
 
   let UpdateDate = new Date(mainData.updated).toTimeString();
 
-  let people = mainData.cases.toLocaleString();
+  // let people = mainData.cases.toLocaleString();
   // console.log(people);
 
   return (

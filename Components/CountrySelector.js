@@ -9,7 +9,7 @@ export default function CountrySelector() {
   //const [flag, setFlag] = useState();
   const [selectedCountry, setSelectedCountry] = useState("Bangladesh");
   const { coronadata: countries, error } = getMainData(
-    "https://corona.lmao.ninja/countries"
+    "https://corona.lmao.ninja/v2/countries"
   );
   //console.log(countries);
   if (!countries) return <p>Loading...</p>;
@@ -57,7 +57,7 @@ export default function CountrySelector() {
       <Row style={{ paddingTop: "20px" }}>
         <Col>
           <CountryData
-            url={"https://corona.lmao.ninja/countries/" + selectedCountry}
+            url={"https://corona.lmao.ninja/v2/countries/" + selectedCountry}
           ></CountryData>
         </Col>
       </Row>
